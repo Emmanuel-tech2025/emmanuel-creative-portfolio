@@ -9,7 +9,7 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 - Built with [HTML, CSS, JavaScript] <!-- replace with your tech stack -->
 
 ## 🔗 Live Demo
-👉 [View Portfolio](https://your-username.github.io/) <!-- replace with your actual link -->
+👉 [View Portfolio]([https://your-username.github.io/](https://emmanuel-tech2025.github.io/emmanuel-creative-portfolio/)) <!-- replace with your actual link -->
 
 ## 🛠️ Built With
 - HTML
