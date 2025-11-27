@@ -358,22 +358,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Optional: quick console tester to bypass the form
-  window.TEST_EMAILJS = async function () {
-    try {
-      setStatus("⏳ Testing EmailJS…", "#ffd700");
-      const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: "Test Sender",
-        reply_to: "test@example.com",
-        message: "Hello from TEST_EMAILJS()",
-      });
-      console.log("✅ Test result:", result);
-      setStatus("✅ Test email sent (check your inbox).", "limegreen");
-    } catch (err) {
-      console.error("❌ Test failed:", err);
-      setStatus(`❌ Test failed: ${err?.text || err?.message}`, "red");
-    }
-  };
-});
+window.TEST_EMAILJS = async function () {
+  try {
+    setStatus("⏳ Testing EmailJS…", "#ffd700");
+    const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: "Test Sender",
+      reply_to: "test@example.com",
+      message: "Hello from TEST_EMAILJS()",
+    });
+    console.log("✅ Test result:", result);
+    setStatus("✅ Test email sent (check your inbox).", "limegreen");
+  } catch (err) {
+    console.error("❌ Test failed:", err);
+    setStatus(`❌ Test failed: ${err?.text || err?.message}`, "red");
+  }
+};  // no extra `});`
 
 
 
