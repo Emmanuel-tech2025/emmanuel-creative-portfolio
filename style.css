@@ -1,10 +1,9 @@
 /* ===== RESET ===== */
-*{
-    margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /* ===== GLOBAL ===== 
 
@@ -23,7 +22,11 @@ body {
   position: fixed;
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -32,19 +35,21 @@ body {
   z-index: 9999;
   transition: width 0.2s ease, height 0.2s ease;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
 
 /* Cursor expands when hovering links */
-a:hover~.cursor {
+a:hover ~ .cursor {
   width: 220px;
   height: 220px;
-  background: radial-gradient(circle, rgba(0, 234, 255, 0.4) 0%, transparent 80%);
-
+  background: radial-gradient(
+    circle,
+    rgba(0, 234, 255, 0.4) 0%,
+    transparent 80%
+  );
 }
-
 
 /* Effect when hovering links */
 /* a:hover ~ .cursor {
@@ -54,7 +59,6 @@ a:hover~.cursor {
   border-color: #00eaff;
 } */
 
-
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -63,11 +67,10 @@ a:hover~.cursor {
 h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #4f46e5;
+  color: #fff;
 }
 
 /* ===== NAVBAR ===== */
-
 
 /* .navbar {
   display: flex;
@@ -84,7 +87,7 @@ h2 {
   z-index: 1000;
 } */
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,7 +140,7 @@ h2 {
     padding: 0;
   }
 
-  .navbar{
+  .navbar {
     width: 100%;
   }
 
@@ -209,9 +212,6 @@ h2 {
   position: relative;
   z-index: 1;
   /* Keep content above particles */
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -319,8 +319,6 @@ h2 {
     font-size: 1rem;
   }
 
-
-
   .buttons {
     justify-content: center;
   }
@@ -328,7 +326,6 @@ h2 {
   .btn {
     padding: 10px 16px;
     font-size: 0.9rem;
-
   }
 }
 
@@ -366,7 +363,6 @@ h2 {
 .hero-image.fade-in {
   animation-delay: 0.6s;
 }
-
 
 /* About section */
 #about {
@@ -492,14 +488,12 @@ h2 {
   box-shadow: 0 0 15px #f7df1e, 0 0 25px #ffe600;
 }
 
-
 .percent {
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
   opacity: 0;
   transition: opacity 0.5s ease;
-
 }
 
 /* unique styles for each skill */
@@ -524,7 +518,6 @@ h2 {
   color: #333;
   /* percent text visible on yellow */
 }
-
 
 /* Skill label icons*/
 .skill span {
@@ -561,7 +554,6 @@ h2 {
 .fa-js {
   color: #f7df1e;
 }
-
 
 /* ===== SERVICES ===== */
 .services {
@@ -618,7 +610,6 @@ h2 {
   color: #ccc;
 }
 
-
 /* Base fade-zoom */
 .fade-in {
   opacity: 0;
@@ -631,7 +622,6 @@ h2 {
   opacity: 1;
   transform: scale(1) translateY(0);
 }
-
 
 /* ===== PROJECTS ===== */
 .projects {
@@ -661,7 +651,6 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-  
 }
 
 .project-card {
@@ -755,26 +744,22 @@ h2 {
   transform: scale(1);
 }
 
-
-
 /* ===== RESUME ===== */
-#header
-#resume {
+#header #resume {
   width: min(900px, 90%);
   padding: 80px 20px;
   background: #f9f9f9;
   text-align: center;
-  
 }
 
-#resume h2{
+#resume h2 {
   font-size: 2.2rem;
   margin-bottom: 10px;
   color: #fff;
   padding: 20px 20px 0;
 }
 
-.section-intro{
+.section-intro {
   color: #0ef;
   padding: 20px 20px 0;
 }
@@ -800,9 +785,8 @@ h2 {
 .timeline.active::before {
   background: #0ef; /* glowing line when active */
   box-shadow: 0 0 15px #0ef;
-   height: 100%;
+  height: 100%;
 }
-
 
 /* When active (on scroll) */
 /* .timeline.active::before {
@@ -828,16 +812,15 @@ h2 {
 .timeline-dot {
   width: 18px;
   height: 18px;
-  background: #0ef;               /* cyan fill */
-  border: 2px solid #fff;         /* white outline for visibility */
+  background: #0ef; /* cyan fill */
+  border: 2px solid #fff; /* white outline for visibility */
   border-radius: 50%;
   position: absolute;
-  left: 0;                        /* align exactly on the vertical line */
-  transform: translateX(-50%);    /* center it */
+  left: 0; /* align exactly on the vertical line */
+  transform: translateX(-50%); /* center it */
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  z-index: 2;                     /* keep on top of line */
+  z-index: 2; /* keep on top of line */
 }
-
 
 /* When active */
 .timeline-dot.active {
@@ -845,12 +828,11 @@ h2 {
   box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
 }
 
-
 .timeline-content {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
   max-width: 280px;
 }
@@ -865,7 +847,6 @@ h2 {
   font-size: 14px;
   color: #666;
 }
-
 
 /* Dot Glow Effect */
 .timeline-block .dot {
@@ -891,13 +872,16 @@ h2 {
   transition: all 0.6s ease;
 }
 
+.timeline-content p {
+  color: #203a43;
+  font-size: 14px;
+}
 
 /* ===== Responsive Resume Timeline ===== */
 @media (max-width: 768px) {
-
-  .timeline{
+  .timeline {
     width: 75%;
-  } 
+  }
 
   .timeline::before {
     left: 20px; /* Move line to the left */
@@ -923,14 +907,14 @@ h2 {
     max-width: 100%;
   }
 
-  .resume-btn{
+  .resume-btn {
     margin-left: 20px;
   }
 }
 
-  .resume-btn{
-    margin-left: 150px;
-  }
+.resume-btn {
+  margin-left: 150px;
+}
 
 /* ===== TESTIMONIALS ===== */
 #testimonials {
@@ -1018,10 +1002,8 @@ h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-
-  #testimonials{
+  #testimonials {
     width: 100%;
-    
   }
   .testimonial-prev {
     left: 10px;
@@ -1031,7 +1013,6 @@ h2 {
     right: 10px;
   }
 }
-
 
 /* ===== Contact Section ===== */
 #contact {
@@ -1070,7 +1051,8 @@ label {
   margin-bottom: 8px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -1082,11 +1064,11 @@ input, textarea {
   @media screen and (max-width: 768px) {
     width: 95%;
     margin: auto;
-
   }
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #0ef;
 }
 
@@ -1114,7 +1096,6 @@ button:hover {
   font-weight: 500;
 }
 
-
 /* ===== FOOTER ===== */
 footer {
   background: #111;
@@ -1135,26 +1116,25 @@ footer {
 
 @keyframes shake {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   25% {
-    transform: translateX(-5px)
+    transform: translateX(-5px);
   }
 
   50% {
-    transform: translateX(5px)
+    transform: translateX(5px);
   }
 
   75% {
-    transform: translateX(-5px)
+    transform: translateX(-5px);
   }
 
   100% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 }
-
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {

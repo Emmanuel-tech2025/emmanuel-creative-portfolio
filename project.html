@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel Creative Portfolio/projects</title>
+  <link rel="stylesheet" href="project.css">
+  <!-- Font Awesome Icons -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+</head>
+<body>
+
+  <div class="cursor"></div>
+
+  <!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Emmanuel Creative</a></div>
+
+    <!-- Hamburger icon (only visible on mobile) -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <!-- ===== PROJECTS SECTION ===== -->
+  <div class="container">
+    <h1>My recent projects</h1>
+  <section class="projects" id="projects">
+  <p class="section-intro">Here are some of the projects I’ve built recently.</p>
+
+<div class="project-grid">
+  <div class="project-card fade-in">
+    <img src="Image/Portfoliio.png" alt="Project 1">
+    <div class="project-content">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website to showcase my work and skills.</p>
+      <div class="project-links">
+        <a href="https://emmanuel-tech2025.github.io/portfolio/" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn secondary">Code</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card fade-in">
+    <img src="Image/Kccs.png" alt="Project 2">
+    <div class="project-content">
+      <h3>KCCS Website</h3>
+      <p>A web forum that bring people from different creative field together.</p>
+      <div class="project-links">
+        <a href="http://emmanuel-forum.local/" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn secondary">Code</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card fade-in">
+    <img src="Image/quiz.png" alt="Project 3">
+    <div class="project-content">
+      <h3>Quiz App</h3>
+      <p>A quiz app that people play Q&A game and responsive design.</p>
+      <div class="project-links">
+        <a href ="https://emmanuel-tech2025.github.io/quiz-game/" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn secondary">Code</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="project-card fade-in">
+    <img src="Image/To-Do.png" alt="Project 3">
+    <div class="project-content">
+      <h3>To-Do List App</h3>
+      <p>A task management app with local storage and responsive design.</p>
+      <div class="project-links">
+        <a href ="https://emmanuel-tech2025.github.io/quiz-game/" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn secondary">Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  </div>
+
+  <!-- ===== Contact Section ===== -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to work together or just say hello, fill out the form below 👇</p>
+
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="reply_to" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+    <p id="form-status"></p>
+  </form>
+</section>
+
+</main>
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Emmanuel | All Rights Reserved</p>
+</footer>
+
+
+  <script src="project.js"></script>
+</body>
+</html>
